@@ -1,0 +1,14 @@
+<resources>
+	<string-array name="class_name">
+		<item>Text Recognition</item>
+		<item>Barcode Scanning</item>
+		<item>Face Detection</item>
+		<item>Image Labeling</item>
+		<item>Landmark Dectection</item>
+		<item>Custom Model</item>
+		<item>Language Identification</item>
+		<item>Smart Reply</item>
+		<item>Translate Text</item>
+		<item>AutoML Vision Edge</item>
+	</string-array>
+</resources>

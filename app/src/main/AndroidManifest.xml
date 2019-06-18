@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.example.mlkit"
+	android:installLocation="auto">
+
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<uses-feature
+		android:name="android.hardware.camera"
+		android:required="true" />
+	<uses-feature
+		android:name="android.hardware.camera.autofocus"
+		android:required="true" />
+
+	<application
+		android:allowBackup="true"
+		android:fullBackupContent="@xml/backup_rules"
+		android:hardwareAccelerated="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="MyMLApp"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".TextActivity" />
+		<activity android:name=".BarcodeActivity" />
+		<activity android:name=".FaceActivity" />
+		<activity android:name=".ImageActivity" />
+		<activity android:name=".LandmarkActivity" />
+		<activity android:name=".CustomActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+
+				<data
+					android:host="mokmoon.com"
+					android:pathPrefix="/bangkok"
+					android:scheme="https" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".LanguageActivity" android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+		<activity android:name=".SmartReplyActivity" android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+		<activity android:name=".TranslateActivity" android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+		<activity android:name=".AutoMLActivity" />
+
+		<meta-data
+			android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+			android:value="ocr, face, barcode, label" />
+
+		<provider
+			android:name="android.support.v4.content.FileProvider"
+			android:authorities="${applicationId}.provider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/provider_paths" />
+		</provider>
+	</application>
+
+</manifest>
