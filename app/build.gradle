@@ -40,12 +40,17 @@ dependencies {
 		force = true
 	}
 	implementation 'com.google.firebase:firebase-core:16.0.9'
-
+	implementation 'com.android.support:cardview-v7:28.0.0'
 	implementation 'com.google.firebase:firebase-ml-vision:20.0.0'
 	implementation 'com.google.firebase:firebase-ml-vision-automl:16.0.0'
 	implementation 'com.google.firebase:firebase-ml-vision-face-model:17.0.2'
 	implementation 'com.google.firebase:firebase-ml-vision-image-label-model:17.0.2'
+	// RecyclerView
+	implementation 'com.android.support:recyclerview-v7:28.0.0'
 
+
+	// Glide
+	implementation 'com.github.bumptech.glide:glide:3.7.0'
 	implementation 'com.google.firebase:firebase-ml-model-interpreter:19.0.0'
 
 	implementation 'com.google.firebase:firebase-ml-natural-language:19.0.1'

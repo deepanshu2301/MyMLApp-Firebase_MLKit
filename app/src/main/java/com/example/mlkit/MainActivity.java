@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 		classNames = getResources().getStringArray(R.array.class_name);
 
-		ListView listView = findViewById(R.id.list_view);
-		ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, classNames);
-		listView.setAdapter(adapter);
-		listView.setOnItemClickListener(this);
+//		ListView listView = findViewById(R.id.list_view);
+//		ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, classNames);
+//		listView.setAdapter(adapter);
+//		listView.setOnItemClickListener(this);
 	}
 
 	@Override
