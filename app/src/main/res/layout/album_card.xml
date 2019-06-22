@@ -34,6 +34,7 @@
                 android:paddingRight="@dimen/album_title_padding"
                 android:paddingTop="@dimen/album_title_padding"
                 android:paddingBottom="@dimen/album_title_padding"
+                android:background="@color/viewBg"
                 android:textColor="@color/album_title"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
