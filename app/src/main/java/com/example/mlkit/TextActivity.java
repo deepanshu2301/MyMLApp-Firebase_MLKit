@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mlkit.helpers.MyHelper;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -46,6 +47,7 @@ public class TextActivity extends BaseActivity implements View.OnClickListener {
 				}
 				break;
 			case R.id.btn_cloud:
+				Toast.makeText(getBaseContext(),"Free Period of Google Cloud has ended",Toast.LENGTH_SHORT).show();
 				if (mBitmap != null) {
 					runCloudTextRecognition();
 				}
