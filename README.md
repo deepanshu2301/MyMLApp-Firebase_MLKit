@@ -1,5 +1,5 @@
 # MyMLApp-Firebase_MLKit
-Android app that provides the implementation of various Google API's.
+Android app that provides the implementation of various Google API's.<br />
 	API's used->
  		Text Recognition
 		Barcode Scanning
