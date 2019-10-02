@@ -1,28 +1,28 @@
 # MyMLApp-Firebase_MLKit
 Android app that provides the implementation of various Google API's.<br />
-	API's used->
- 		Text Recognition
-		Barcode Scanning
-		Face Detection
-		Image Labeling
-		Landmark Detection
-		Object Detection
-		Language Identification
-		Smart Reply
-		Translate Text
-		Auto ML Vision
-# How To Use ?
-1> Git clone.
-2> Add to your Firebase.
+	API's used-><br />
+ 		Text Recognition<br />
+		Barcode Scanning<br />
+		Face Detection<br />
+		Image Labeling<br />
+		Landmark Detection<br />
+		Object Detection<br />
+		Language Identification<br />
+		Smart Reply<br />
+		Translate Text<br />
+		Auto ML Vision<br />
+# How To Use ?<br />
+1> Git clone.<br />
+2> Add to your Firebase.<br />
 3> Profit !
 
 
 # Screenshots 
-UI
+##UI<br />
 ![](https://i.imgur.com/mcigzxh.jpg?1) 
 ![](https://i.imgur.com/LS6LRfG.jpg?1)
 
-Selection Template 
+##Selection Template <br />
 ![](https://i.imgur.com/V8xuWqM.jpg?1)
 
 # License
