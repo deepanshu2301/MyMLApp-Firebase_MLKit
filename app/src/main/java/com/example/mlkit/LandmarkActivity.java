@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mlkit.helpers.MyHelper;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -28,6 +29,7 @@ public class LandmarkActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_device);
+		Toast.makeText(getBaseContext(),"Free Period of Google Cloud has ended",Toast.LENGTH_SHORT).show();
 		mTextView = findViewById(R.id.text_view);
 		mImageView = findViewById(R.id.image_view);
 	}

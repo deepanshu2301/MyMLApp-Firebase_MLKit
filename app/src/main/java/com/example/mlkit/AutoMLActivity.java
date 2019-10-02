@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mlkit.helpers.MyHelper;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -36,6 +37,7 @@ public class AutoMLActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_device);
+		Toast.makeText(getBaseContext(),"Free Period of Google Cloud has ended",Toast.LENGTH_SHORT).show();
 		mImageView = findViewById(R.id.image_view);
 		mTextView = findViewById(R.id.text_view);
 

@@ -30,8 +30,8 @@ public class TranslateActivity extends AppCompatActivity implements View.OnClick
 		findViewById(R.id.btn).setOnClickListener(this);
 
 		FirebaseTranslatorOptions options = new FirebaseTranslatorOptions.Builder()
-				.setSourceLanguage(FirebaseTranslateLanguage.TH)
-				.setTargetLanguage(FirebaseTranslateLanguage.EN)
+				.setSourceLanguage(FirebaseTranslateLanguage.EN)
+				.setTargetLanguage(FirebaseTranslateLanguage.HI)
 				.build();
 		EnThTranslator = FirebaseNaturalLanguage.getInstance().getTranslator(options);
 
